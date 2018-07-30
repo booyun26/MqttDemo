@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iconMessage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/comments_icon"
+        android:layout_weight="10" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:paddingStart="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDeviceID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Select Device"
+            android:layout_weight="30" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="55" />
+
+        <ImageButton
+            android:id="@+id/buttonPublish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_icon" />
+
+        <Button
+            android:id="@+id/buttonSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Subscribe"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/send_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <ListView
+            android:id="@+id/listComingMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/editbox_dropdown_light_frame" />
+
+        <ImageView
+            android:id="@+id/imageSOS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sos_icon"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</LinearLayout>
